@@ -1,12 +1,19 @@
 <?php
 
-include "settings.php";
+$pagetitle = "Create User";
 
-$_GET['createtrue'];
+include "settings.php";
+include "header.php";
+
+$createtrue = $_POST['createtrue'];
 
 echo"
 <form action='createuser.php' method='post'>
-Name: <input type='text' name='name'>
+Name: <input type='text' name='name' /><br />
+Email: <input type='text' name='email' /><br />
+Password: <input type='password' name='password' /><br />
+<input type='hidden' value='bingo' name='createtrue' />
+<input type='Submit' /> 
 </form>
 ";
 
@@ -26,7 +33,7 @@ $lastid = mysql_insert_id();
 mysql_close();
 
 */
-
+echo"$createtrue";
 }
 
 ?>

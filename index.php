@@ -1,16 +1,10 @@
 <?php
 
-/* Todo
-- Create User interface
-- Create Questions interface
-- Login Screen
-- Question Screen
-- Results Screen
-*/
+// Begin Setup of page!
+$pagetitle = "Home"; // Throw the page title in here.
+include "header.php"; //Include the top level HTML jazz.
 
-include "header.php";
-
-echo "Hello World";
+echo "Please login to complete your test or see Admin page.";
 
 
 

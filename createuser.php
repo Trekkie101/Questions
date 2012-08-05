@@ -5,10 +5,10 @@ $pagetitle = "Create User";
 include "settings.php";
 include "header.php";
 
-$createtrue = $_POST['createtrue'];
-$name = $_POST['name'];
-$email = $_POST['email'];
-$password = $_POST['password'];
+$createtrue = mysql_real_escape_string($_POST['createtrue']);
+$name = mysql_real_escape_string($_POST['name']);
+$email = mysql_real_escape_string($_POST['email']);
+$password = mysql_real_escape_string($_POST['password']);
 
 echo"
 <form action='createuser.php' method='post'>
